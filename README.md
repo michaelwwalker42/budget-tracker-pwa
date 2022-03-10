@@ -1,58 +1,53 @@
 # Budget Tracker (PWA)
+![license](https://img.shields.io/badge/license-MIT-orange.svg)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?logo=express&logoColor=%2361DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=white)
+![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?logo=heroku&logoColor=white)
 
+## Description
+A budget tracking application that allows for offline access and functionality. This progressive web application uses MongoDb, Mongoose, Express, Morgan, and IndexedDb. 
+The following image shows the web application's appearance and functionality:  
+
+![budget-tracker-app-demo](assets/images/budget-tracker-demo.png)
+
+## Table of Contents
+  * [User Story](#user-story) 
+  * [Technologies](#technologies)
+  * [Deployment](#deployment)
+  * [License](#license)
+  * [Questions](#questions)
 ## User Story  
-AS AN avid traveler  
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection  
-SO THAT my account balance is accurate when I am traveling 
+**AS AN** avid traveler  
+**I WANT** to be able to track my withdrawals and deposits with or without a data/internet connection  
+**SO THAT** my account balance is accurate when I am traveling 
+## Technologies
+- [Express.js](https://expressjs.com/)
+- [MongoDb](https://www.mongodb.com/)
+- [Mongoose ODM](https://mongoosejs.com/)
+- [Morgan](https://www.npmjs.com/package/morgan)
+- [Compression](https://www.npmjs.com/package/compression)
+- [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+- [Web Manifest](https://web.dev/add-manifest/)
+- [IndexedDb](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
 
-## Acceptance Criteria  
-GIVEN a budget tracker without an internet connection:  
+## Deployment
+The site is hosted by [Heroku](https://www.heroku.com) and uses [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register).  
+[Click here to go to app](https://walker-budget-tracker.herokuapp.com/)
 
-- WHEN the user inputs an expense or deposit  
-THEN they will receive a notification that they have added an expense or deposit    
+## License
 
-- WHEN the user reestablishes an internet connection  
-THEN the deposits or expenses added while they were offline are added to their transaction history and their totals are updated  
+ [MIT License](https://choosealicense.com/licenses/mit/)
 
-## Offline Functionality  
-You’ll need to use IndexedDB to add offline functionality. Review Module 18: NoSQL, Lesson 4: Add Offline Persistence with IndexedDB as a refresher on how to add this to your application.
+Copyright (c) 2022 Michael Walker
 
-You’ll also need to add a service worker to your application. Review Module 19: Progressive Web Applications (PWA), Lesson 4: Using Service Workers as a refresher on how to add this to your application.  
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-**IMPORTANT**  
-You should add your idb.js file to the public/js/ directory of your application.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-You should add your service worker to the root of the public/ directory of your application.  
-
-Once you’ve updated the existing budget tracker, it should provide the following functionality:  
-
-- The ability to enter deposits offline.
-
-- The ability to enter expenses offline.
-
-- Offline entries should be added to the tracker when the application is brought back online.  
-
-## Web Manifest  
-Because this will be a mobile-first application, you’ll also need to add a web manifest to your application with the app’s metadata, to let users’ devices know what they’re installing and how the app should look on the home screen. 
-
-This `manifest.json` file for this project will contain the following properties:  
-- name
-
-- short_name
-
-- icons
-
-- theme_color
-
-- background_color
-
-- start_url
-
-- display
-
-**IMPORTANT**  
-In the module project, you used webpack to create the `manifest.json` file. For this application, you’ll need to create it manually and add it to the root of the `public/` directory of your application. You can also review Module 19: Progressive Web Applications (PWA), Lesson 5: Convert the App to a PWA as a refresher on web manifests.  
-
-## Deployment to Heroku Using MongoDB Atlas
-Finally, the budget tracker has a server and uses MongoDB as its database, so you’ll need to deploy this application to Heroku using MongoDB Atlas. To review this process, look at Module 18: NoSQL, Lesson 5: Add Mongoose Validation, specifically 18.5.5: Deploy to Heroku.
+## Questions
+  My Github Profile: [michaelwwalker42](https://github.com/michaelwwalker42)  
+  For additional questions email me at michaelwwalker42@gmail.com 
